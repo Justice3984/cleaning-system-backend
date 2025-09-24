@@ -19,6 +19,12 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+
+app.get("/", (req, res) => {
+  res.send("Backend API is running 🚀");
+});
+
+
 // Routes
 app.use("/api/bookings", bookingRoutes);
 app.use("/api/tasks", taskRoutes);
