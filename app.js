@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(cors({
-  origin: "https://cleaning-system-one.vercel.app/", // or your frontend domain
+  origin: "https://cleaning-system-one.vercel.app", // or your frontend domain
   methods: ["GET", "POST", "PATCH", "DELETE"],
   credentials: true
 }));
