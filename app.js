@@ -17,12 +17,18 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
 
 
 app.get("/", (req, res) => {
   res.send("Backend API is running 🚀");
 });
+
+app.use(cors({
+  origin: "https://cleaning-system-one.vercel.app/", // or your frontend domain
+  methods: ["GET", "POST", "PATCH", "DELETE"],
+  credentials: true
+}));
+
 
 
 // Routes
