@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | SmartStay</title>
+  <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="./assets/css/profile.css">
+</head>
+<body>
+   <aside class="sidebar">
+    <a href="index.html" class="logo">SmartStay</a>
+    <nav>
+      <a href="dashboard.html" >Dashboard</a>
+      <a href="bookings.html">Bookings</a>
+      <a href="properties.html">Properties</a>
+      <a href="locks.html">Locks</a>
+      <a href="notifications.html">Notifications <span class="badge">12</span></a>
+      <a href="settings.html">Settings</a>
+      <a href="signout.html">Sign Out</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <h1>Profile</h1>
+      <div class="user-info">👤 Admin</div>
+    </header>
+
+    <div class="profile-card">
+      <!-- Avatar -->
+      <div class="avatar-container">
+        <img src="https://via.placeholder.com/100" alt="Profile Avatar" class="avatar">
+        <label class="upload-btn">
+          Change Photo
+          <input type="file" accept="image/*" hidden>
+        </label>
+      </div>
+
+      <!-- Profile Form -->
+      <form class="profile-form">
+        <h2>Personal Information</h2>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" value="John Doe">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" value="john@example.com">
+
+        <label for="role">Role</label>
+        <select id="role">
+          <option selected>Admin</option>
+          <option>Staff</option>
+          <option>Host</option>
+        </select>
+
+        <h2>Preferences</h2>
+        <div class="preferences-container">
+          <label><input type="checkbox" checked> Receive Email Notifications</label>
+          <label><input type="checkbox"> Enable Dark Mode</label>
+        </div>
+
+        <button type="submit" class="btn">Save Changes</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
